@@ -1,0 +1,44 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Getting started:
+            Console.WriteLine("Enter your name: "); //This method is used for printing a line.
+            string a = Console.ReadLine(); //This method is used for reading information from a line. By default it's datatype is string.
+            Console.WriteLine("Hello, \n" + a); //This is an example of string concatenation. We can use "\n" to print the next set of characters in a newline.
+
+            //Datatypes:
+            int demo_int = 20; //Integer variable.
+            string demo_string = "String"; //A string should be written within double quotes.
+            char demo_char = 'A'; //A character should be written within single quotes.
+            Console.WriteLine(demo_int + " is an integer variable and it's datatype is int.");
+            Console.WriteLine(demo_string + " is a string and it's datatype is string.");
+            Console.WriteLine(demo_char + " is a character and it's datatype is char.");
+            //Other datatypes are float, double, decimal, bool etc.
+
+            //String methods:
+            Console.WriteLine("The length of the string you entered previously i.e STRING is: " + demo_string.Length + "."); //Checks the length of a string.
+            Console.WriteLine("The same string represented in upper case is: " + demo_string.ToUpper() + "."); //Converts a lowercase string to an uppercase string. To do the reverse, ToLower() function is available.  
+            Console.WriteLine(demo_string.Contains("str")); //This method is used for checking whether some specific set of characters is present in a string. Executing this will return "true". 
+
+            //String indexing:
+            Console.WriteLine("The first character of the string you entered previously i.e STRING is: " + demo_string[0]); //Accessing the first character of our string.
+            Console.WriteLine("The character sequence: rin of this string, starts from " + demo_string.IndexOf("rin")); //This method finds out where from a character or a sequence of characters present within a string starts from. In case we use this method when a character or a set of characters is not present in the string, we should get the index as -1.        
+            Console.WriteLine("The sequence of characters you wanted to chunk out from your original string i.e String, suppose from the index 2: " + demo_string.Substring(2)); //This method chunks out a character or a set of charaters from a specified index. We can also pass how many characters we want to chunk out, like this: demo_string.Substring(2, 3), specifying to chunk out 3 characters from the index 2.
+
+            //Int operations (refer from the internet):
+
+            //Applying specific math methods:
+            //Some popular methods:
+            Console.WriteLine("The square root of 4: " + Math.Sqrt(4)); //Square root function.
+            Console.WriteLine("The absolute value of -4, represented as |4|: " + Math.Abs(-4)); //Finds out the absolute value of a number.
+            Console.WriteLine("3 to the power 2: " + Math.Pow(3, 2)); //Computes the power.
+            Console.WriteLine("The maximum of 2 and 2.2: " + Math.Max(2, 2.2)); //Returns which number is maximum. At most two numbers can be provided. To determine which number is minimum there is Math.Min() function.
+            Console.WriteLine("The round figure of 5.6: " + Math.Round(5.6)); //Rounds a number.
+        }
+    }
+}
