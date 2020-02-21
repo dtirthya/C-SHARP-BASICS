@@ -1,0 +1,36 @@
+using System;
+
+namespace test_project_one_c__console
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Arrays:
+            
+            //Example 1:
+            Int64[] demo_array_one = {1, 2, 3, 4}; //Array declaration. You can also use the other types, such as Int32, Int etc.
+            Console.WriteLine("The element at the 0th index of the array you previously declared is: " + demo_array_one[0]);
+            
+            //Example 2(Changing the value sitting at a specific index of the previously declared array):
+            Console.WriteLine("The previous value at the 3rd index of the previously declared array was: " + demo_array_one[3]);
+            demo_array_one[3] = 10;
+            Console.WriteLine("The current value at the 3rd index of the previously declared array is: " + demo_array_one[3]);
+            
+            //Example 3:
+            String[] demo_string_array_one = new string[5]; //Specifying that the new array has 5 index places.
+            //Now,assign the values.
+            demo_string_array_one[0] = "SACHIN TENDULKAR";
+            demo_string_array_one[1] = "SOURAV GANGULY";
+            demo_string_array_one[2] = "RAHUL DRAVID";
+            demo_string_array_one[3] = "VIRAT KOHLI";
+            demo_string_array_one[4] = "VVS LAXMAN";
+            //Print the values at each index. We will understand the concept of loop later.
+            int i;
+            for(i = 0; i < 5; i++)
+            {
+                Console.WriteLine("The element at the " + i + "th index of the previously declared string array is: " + demo_string_array_one[i]);
+            }
+        }
+    }
+}
