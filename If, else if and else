@@ -1,0 +1,43 @@
+using System;
+
+namespace test_project_one_c__console
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Conditional statements:
+            
+            //If, else if and else condition:
+            
+            //Example 1 (If the user enters his name in uppercase, greet him in lowercase and vice versa):
+            Console.WriteLine("Enter your name: ");
+            string name = Console.ReadLine();
+            if(name == name.ToUpper())
+            {
+                Console.WriteLine("Hello, " + name.ToLower() + ", you have previously entered your name in upper case and we are now greeting you by converting your name to lowercase.");
+            }
+            else if(name == name.ToLower())
+            {
+                Console.WriteLine("Hello, " + name.ToUpper() + ", you have previously entered your name in upper case and we are now greeting you by converting your name to uppercase.");
+            }
+
+            //Example 2:
+            bool a = true;
+            bool b = false;
+            Console.WriteLine(!b);
+            if(a || !b)
+            {
+                Console.WriteLine("3");
+            }
+            else if (a && !b)
+            {
+                Console.WriteLine("5");
+            }
+            else
+            {
+                Console.WriteLine("5");
+            }
+        }
+    }
+}
