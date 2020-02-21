@@ -1,0 +1,30 @@
+using System;
+
+namespace test_project_one_c__console
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Methods:
+            //Example 1(Simple greeting): 
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            greet_method(name); //Refer to the function body below, to check what it does.
+            //Example 2(Simple addition):
+            int result = demo_addition(2, 3);
+            Console.WriteLine(result);
+        }
+        //Function to greet an user by his/her name.
+        static void greet_method(string name)
+        {
+            Console.WriteLine("Hello, " + name);
+        }
+        //Function which returns the value obtained by adding two numbers.
+        static int demo_addition(int a, int b)
+        {
+            int c = a + b;
+            return c;
+        }
+    }
+}
