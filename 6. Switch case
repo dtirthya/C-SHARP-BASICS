@@ -1,0 +1,63 @@
+using System;
+
+namespace test_project_one_c__console
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Switch case:
+            //A simple calculator using switch case, taking only two numbers.
+            Console.WriteLine("1ST NUMBER: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2ND NUMBER: ");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("\nLIST OF OPERATIONS:\n\n1. FOR ADDITION PRESS 1.\nFOR SUBTRACTION PRESS 2.\nFOR MULTIPLICATION PRESS 3.\nFOR DIVISION PRESS 4.\n\nENTER YOUR CHOICE: ");
+            double your_operator = Convert.ToDouble(Console.ReadLine());
+            operation(a, b, your_operator);
+        }
+        static void operation(double a, double b, double your_operator)
+        {
+            double result;
+            switch(your_operator)
+            {
+                case 1:
+                    result = addition(a, b);
+                    Console.WriteLine("\nTHE RESULT IS: " + result);
+                    break;
+                case 2:
+                    result = subtraction(a, b);
+                    Console.WriteLine("\nTHE RESULT IS: " + result);
+                    break;
+                case 3:
+                    result = multiplication(a, b);
+                    Console.WriteLine("\nTHE RESULT IS: " + result);
+                    break;
+                case 4:
+                    result = division(a, b);
+                    Console.WriteLine("\nTHE RESULT IS: " + result);
+                    break;
+            }
+        }
+        static double addition(double a, double b)
+        {
+            double c = a + b;
+            return c;
+        }
+        static double subtraction(double a, double b)
+        {
+            double c = a - b;
+            return c;
+        }
+        static double multiplication(double a, double b)
+        {
+            double c = a * b;
+            return c;
+        }
+        static double division(double a, double b)
+        {
+            double c = a / b;
+            return c;
+        }
+    }
+}
