@@ -39,6 +39,13 @@ namespace ConsoleApp1
             Console.WriteLine("3 to the power 2: " + Math.Pow(3, 2)); //Computes the power.
             Console.WriteLine("The maximum of 2 and 2.2: " + Math.Max(2, 2.2)); //Returns which number is maximum. At most two numbers can be provided. To determine which number is minimum there is Math.Min() function.
             Console.WriteLine("The round figure of 5.6: " + Math.Round(5.6)); //Rounds a number.
+        
+            //Note:
+            //Accessing value of string by string interpolation method.
+            string firstName = "John";
+            string lastName = "Doe";
+            string name = $"My full name is: {firstName} {lastName}";
+            Console.WriteLine(name);
         }
     }
 }
