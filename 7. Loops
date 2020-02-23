@@ -1,0 +1,38 @@
+using System;
+
+namespace test_project_one_c__console
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Loop:
+            //While Loop:
+            //Example:
+            Console.WriteLine("Printing 0-5 using while loop");
+            int i = 0;
+            while(i <= 5)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+            //Do while loop:
+            //Example:
+            Console.WriteLine("Printing 0-5 using do while loop");
+            int j = 0;
+            do
+            {
+                Console.WriteLine(j);
+                j++;
+            } while(j <= 5);
+            //For loop:
+            //Example:
+            Console.WriteLine("Printing 0-5 using for loop");
+            int k;
+            for(k = 0; k <= 5; k++)
+            {
+                Console.WriteLine(k);
+            }
+        }
+    }
+}
